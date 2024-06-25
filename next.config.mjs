@@ -4,6 +4,7 @@ const nextConfig = withBundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
 })({
   reactStrictMode: true,
+<<<<<<< HEAD
   distDir: '.next',
   webpack: (config, { isServer }) => {
     if (!isServer) {
@@ -15,5 +16,9 @@ const nextConfig = withBundleAnalyzer({
     return config;
   },
 });
+=======
+  distDir: '.next',  // Ensure the build output directory is correctly set
+};
+>>>>>>> f44695c8d15e6520cfff890d1192b8292b304496
 
 export default nextConfig;
